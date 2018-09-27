@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package eshop.api.pricing;
+
+message Price {
+    string productId = 1;
+    string subTypeId = 2;
+    double fullPrice = 3;
+    double salePrice = 4;
+    int64  saleStart = 5;
+    int64  saleUntil = 6;
+}

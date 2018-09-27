@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package eshop.api.product;
+
+message Product {
+    string id = 1;
+    string vendorId = 2;
+    string name = 3;
+    string desc = 4;
+    repeated string tags = 5;
+    repeated ProductSubType subTypes = 6;
+}
+
+message ProductSubType {
+    string id = 1;
+    string productId = 2;
+    string name = 3;
+    string desc = 4;
+    repeated string imgUrls = 5;
+}

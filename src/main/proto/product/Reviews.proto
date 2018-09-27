@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package eshop.api.product;
+
+message Review {
+    string userId = 1;
+    string productId = 2;
+    string subTypeId = 3;
+    string comments = 4;
+    Rating productRating = 5;
+    Rating deliverRating = 6;
+}
+
+enum Rating {
+    STAR_1 = 0;
+    STAR_2 = 1;
+    STAR_3 = 2;
+    STAR_4 = 3;
+    STAR_5 = 4;
+}
